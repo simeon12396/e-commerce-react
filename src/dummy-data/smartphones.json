@@ -1,0 +1,92 @@
+{
+    "APPLE": [
+        {
+            "model": "8, свиц цвят",
+            "processor": "Apple A11 Bionic (2-ядрен, Monsoon & 4-ядрен, Mistral)",
+            "display": "4.7-инчов IPS LCD капацитивен мултитъч екран с олеофобско покритие и резолюция 1334 x 750 пиксела",
+            "battery": "1821 mAh",
+            "price": "1179лв"
+        },
+        {
+            "model": "10, свиц цвят",
+            "processor": "Apple A9 Bionic (2-ядрен, Monsoon & 4-ядрен, Mistral)",
+            "display": "5.2-инчов IPS LCD капацитивен мултитъч екран с олеофобско покритие и резолюция 1334 x 750 пиксела",
+            "battery": "2021 mAh",
+            "price": "1700лв"
+        },
+        {
+            "model": "XR , бял цвят",
+            "processor": "Apple A12 Bionic (2-ядрен, Monsoon & 4-ядрен, Mistral)",
+            "display": "5.0-инчов IPS LCD капацитивен мултитъч екран с олеофобско покритие и резолюция 1334 x 750 пиксела",
+            "battery": "2500 mAh",
+            "price": "1500лв"
+        },
+        {
+            "model": "11, свиц цвят",
+            "processor": "Apple A12 Bionic (2-ядрен, Monsoon & 4-ядрен, Mistral)",
+            "display": "6.1-инчов IPS LCD капацитивен мултитъч екран с олеофобско покритие и резолюция 1334 x 750 пиксела",
+            "battery": "3000 mAh",
+            "price": "2000лв"
+        }
+    ],
+    "SAMSUNG": [
+        {
+            "model": "Galaxy A30s 64GB Dual SIM, Green",
+            "processor": "Exynos 7904 (14 nm) (2x1.8 GHz Cortex-A73 & 6x1.6 GHz Cortex-A53)",
+            "display": "6.4-инчов Super AMOLED капацитивен мултитъч екран с резолюция 1560 x 720 пиксела",
+            "battery": "3000 mAh",
+            "price": "700лв"
+        },
+        {
+            "model": "Galaxy Note10 DS, 256GB Aura Black",
+            "processor": "Exynos 9825 (7 nm) ((2x2.73 GHz Mongoose M4 & 2x2.4 GHz Cortex-A75 & 4x1.9 GHz Cortex-A55)",
+            "display": "6.3-инчов Dynamic AMOLED капацитивен мултитъч екран с Corning Gorilla Glass и резолюция 2280 x 1080 пиксела",
+            "battery": "2021 mAh",
+            "price": "1700лв"
+        },
+        {
+            "model": "Galaxy A50 128GB, бял цвят",
+            "processor": "Exynos 9825 (7 nm) ((2x2.73 GHz Mongoose M4 & 2x2.4 GHz Cortex-A75 & 4x1.9 GHz Cortex-A55)",
+            "display": "5.0-инчов IPS LCD капацитивен мултитъч екран с олеофобско покритие и резолюция 1334 x 750 пиксела",
+            "battery": "2500 mAh",
+            "price": "700лв"
+        },
+        {
+            "model": "Galaxy Note10+ DS, 256GB Aura White",
+            "processor": "Exynos 9825 (7 nm) ((2x2.73 GHz Mongoose M4 & 2x2.4 GHz Cortex-A75 & 4x1.9 GHz Cortex-A55)",
+            "display": "6.1-инчов IPS LCD капацитивен мултитъч екран с олеофобско покритие и резолюция 1334 x 750 пиксела",
+            "battery": "3500 mAh",
+            "price": "2000лв"
+        }
+    ],
+    "HUAWEI": [
+        {
+            "model": "P30 Pro 256GB, цвят Breathing Crystal",
+            "processor": "HiSilicon Kirin 980 (7 nm) (2-ядрен, 2.60GHz, Cortex-A76 & 2-ядрен, 1.92GHz, Cortex-A76 & 4-ядрен, 1.80GHz, Cortex-A55)",
+            "display": "6.4-инчов Super AMOLED капацитивен мултитъч екран с резолюция 1560 x 720 пиксела",
+            "battery": "3000 mAh",
+            "price": "1700лв"
+        },
+        {
+            "model": "P30 128GB, цвят Breathing Crystal",
+            "processor": "Exynos 9825 (7 nm) ((2x2.73 GHz Mongoose M4 & 2x2.4 GHz Cortex-A75 & 4x1.9 GHz Cortex-A55)",
+            "display": "6-инчов Dynamic AMOLED капацитивен мултитъч екран с Corning Gorilla Glass и резолюция 2280 x 1080 пиксела",
+            "battery": "3000 mAh",
+            "price": "2000лв"
+        },
+        {
+            "model": "nova 5T 128GB, Black",
+            "processor": "HiSilicon Kirin 980 (7 nm) (2-ядрен, 2.60GHz, Cortex-A76 & 2-ядрен, 1.92GHz, Cortex-A76 & 4-ядрен, 1.80GHz, Cortex-A55)",
+            "display": "5.5-инчов IPS LCD капацитивен мултитъч екран с олеофобско покритие и резолюция 1334 x 750 пиксела",
+            "battery": "3500 mAh",
+            "price": "800лв"
+        },
+        {
+            "model": "P smart Pro 2019 128GB, Breathing Crystal",
+            "processor": "Hisilicon Kirin 710F (12 nm) (4x2.2 GHz Cortex-A73 & 4x1.7 GHz Cortex-A53)",
+            "display": "6.1-инчов IPS LCD капацитивен мултитъч екран с олеофобско покритие и резолюция 1334 x 750 пиксела",
+            "battery": "4000 mAh",
+            "price": "700лв"
+        }
+    ]
+}
