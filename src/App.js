@@ -1,10 +1,27 @@
 import React from 'react';
-import './styles/App.css';
+import './App.css';
+
+import MainLayout from './layouts/MainLayout';
+
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import Laptops from './components/Laptops';
+import Smartphones from './components/Smartphones';
 
 function App() {
   return (
     <div className="App">
-      e-commerce react website
+        <Router>
+          <Switch>
+            <MainLayout>
+              <Route exact path="/" component={Laptops} />
+
+              <Route path="/laptops" component={Laptops} />
+              
+              <Route path="/smartphones" component={Smartphones} />
+            </MainLayout>
+          </Switch>
+        </Router>
     </div>
   );
 }

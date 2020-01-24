@@ -6,7 +6,8 @@
             "video-card": "NVIDIA Quadro T2000",
             "ram": "32GB DDR4",
             "ssd": "от 512GB SSD до 3TB (SSD NVMe и HDD)",
-            "price": "2900лв"
+            "price": "2900лв",
+            "id": "1"
         },
         {
             "model": "xps 13 7390",
@@ -14,7 +15,8 @@
             "video-card": "Intel UHD Graphics",
             "ram": "16GB LPDDR3",
             "ssd": "от 1TB до 2TB SSD NVMe",
-            "price": "4359лв"
+            "price": "4359лв",
+            "id": "2"
         },
         {
             "model": "G3 3590",
@@ -22,7 +24,8 @@
             "video-card": "NVIDIA GeForce GTX 1660 Ti",
             "ram": "16GB LPDDR3",
             "ssd": "от 1256GB (SSD NVMe и HDD) до 3TB (SSD NVMe и HDD)",
-            "price": "3359лв"
+            "price": "3359лв",
+            "id": "3"
         },
         {
             "model": "Dell Latitude 5401",
@@ -30,7 +33,8 @@
             "video-card": "NVIDIA GeForce GTX 1660 Ti",
             "ram": "32GB LPDDR3",
             "ssd": "от 1256GB (SSD NVMe и HDD) до 3TB (SSD NVMe и HDD)",
-            "price": "2359лв"
+            "price": "2359лв",
+            "id": "4"
         }
     ],
     "APPLE": [
@@ -40,7 +44,8 @@
             "video-card": "NVIDIA GeForce GTX 1660 Ti",
             "ram": "8GB DDR3",
             "ssd": "128GB SSD",
-            "price": "2500лв"
+            "price": "2500лв",
+            "id": "1"
         },
         {
             "model": "MacBook Pro 16 Touch Bar Silver",
@@ -48,7 +53,8 @@
             "video-card": "AMD Radeon Pro 5500M",
             "ram": "16GB DDR4",
             "ssd": "1TB SSD NVMe",
-            "price": "6299лв"
+            "price": "6299лв",
+            "id": "2"
         },
         {
             "model": "MacBook Pro 16 Touch Bar Space Gray",
@@ -56,7 +62,8 @@
             "video-card": "AMD Radeon Pro 5300M",
             "ram": "16GB DDR4",
             "ssd": "512GB SSD NVMe",
-            "price": "5389лв"
+            "price": "5389лв",
+            "id": "3"
         },
         {
             "model": "MacBook Air 13.3",
@@ -64,7 +71,8 @@
             "video-card": "Intel UHD Graphics 617",
             "ram": "8GB DDR3",
             "ssd": "512GB SSD NVMe",
-            "price": "36789лв"
+            "price": "36789лв",
+            "id": "4"
         }
     ],
     "ASUS": [
@@ -74,7 +82,8 @@
             "video-card": "NVIDIA GeForce RTX 2060",
             "ram": "16GB DDR4",
             "ssd": "1TB SSD NVMe",
-            "price": "5699лв"
+            "price": "5699лв",
+            "id": "1"
         },
         {
             "model": "ROG Strix G731GU-H7158",
@@ -82,7 +91,8 @@
             "video-card": "NVIDIA GeForce GTX 1660 Ti",
             "ram": "от 8GB до 32GB DDR4",
             "ssd": "1TB SSD NVMe",
-            "price": "2599лв"
+            "price": "2599лв",
+            "id": "2"
         },
         {
             "model": "ZenBook UM431DA-AM010T",
@@ -90,7 +100,8 @@
             "video-card": "AMD Radeon Vega 8",
             "ram": "8GB DDR4",
             "ssd": "500GB SSD NVMe",
-            "price": "1509лв"
+            "price": "1509лв",
+            "id": "3"
         },
         {
             "model": "ZenBook 13 UX333FA-A3018T",
@@ -98,7 +109,8 @@
             "video-card": "Intel UHD Graphics 620",
             "ram": "8GB LPDDR3",
             "ssd": "от 256GB до 2TB SSD NVMe",
-            "price": "1649лв"
+            "price": "1649лв",
+            "id": "4"
         }
     ]
 }
