@@ -1,5 +1,6 @@
 .header {
     background: silver;
+    padding: 8px 0;
 
     &-hyperlink {
         color: white;
@@ -11,6 +12,11 @@
             text-decoration: none;
             color: inherit;
             opacity: .7;
+        }
+
+        &--cart {
+            position: absolute;
+            right: 50px;
         }
     }
 }
