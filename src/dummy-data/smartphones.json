@@ -6,7 +6,7 @@
             "display": "4.7-инчов IPS LCD капацитивен мултитъч екран с олеофобско покритие и резолюция 1334 x 750 пиксела",
             "battery": "1821 mAh",
             "price": "1179",
-            "id": "1",
+            "id": "13",
             "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone8-plus-silver-select-2018?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1550795419237"
         },
         {
@@ -15,7 +15,7 @@
             "display": "5.2-инчов IPS LCD капацитивен мултитъч екран с олеофобско покритие и резолюция 1334 x 750 пиксела",
             "battery": "2021 mAh",
             "price": "1700",
-            "id": "2",
+            "id": "14",
             "image": "https://www.zoobbay.com/wp-content/uploads/2019/10/refurb-iphoneX-spacegray_FMT_WHH.jpeg"
         },
         {
@@ -24,7 +24,7 @@
             "display": "5.0-инчов IPS LCD капацитивен мултитъч екран с олеофобско покритие и резолюция 1334 x 750 пиксела",
             "battery": "2500 mAh",
             "price": "1500",
-            "id": "3",
+            "id": "15",
             "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-xr-white-select-201809?wid=441&hei=529&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1551226036668"
         },
         {
@@ -33,7 +33,7 @@
             "display": "6.1-инчов IPS LCD капацитивен мултитъч екран с олеофобско покритие и резолюция 1334 x 750 пиксела",
             "battery": "3000 mAh",
             "price": "2000",
-            "id": "4",
+            "id": "16",
             "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-black-select-2019?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1566956144418"
         }
     ],
@@ -44,7 +44,7 @@
             "display": "6.4-инчов Super AMOLED капацитивен мултитъч екран с резолюция 1560 x 720 пиксела",
             "battery": "3000 mAh",
             "price": "700",
-            "id": "1",
+            "id": "17",
             "image": "https://brosbg.com/uploads/samsung-galaxy-a30s-a307-dual-gsm-big-3154-5-2797821773.jpg"
         },
         {
@@ -53,7 +53,7 @@
             "display": "6.3-инчов Dynamic AMOLED капацитивен мултитъч екран с Corning Gorilla Glass и резолюция 2280 x 1080 пиксела",
             "battery": "2021 mAh",
             "price": "1700",
-            "id": "2",
+            "id": "18",
             "image": "https://www.mytrendyphone.eu/images/Samsung-Galaxy-Note10-Duos-256GB-Aura-Black-8806090026430-12082019-01-p.jpg"
         },
         {
@@ -62,7 +62,7 @@
             "display": "5.0-инчов IPS LCD капацитивен мултитъч екран с олеофобско покритие и резолюция 1334 x 750 пиксела",
             "battery": "2500 mAh",
             "price": "700",
-            "id": "3",
+            "id": "19",
             "image": "https://images-na.ssl-images-amazon.com/images/I/41FaKE61LWL._AC_.jpg"
         },
         {
@@ -71,7 +71,7 @@
             "display": "6.1-инчов IPS LCD капацитивен мултитъч екран с олеофобско покритие и резолюция 1334 x 750 пиксела",
             "battery": "3500 mAh",
             "price": "2000",
-            "id": "4",
+            "id": "20",
             "image": "https://images.samsung.com/is/image/samsung/uk-galaxy-note10plus-sm-n975-sm-n975fzsdbtu-179669580?$PD_GALLERY_L_JPG$"
         }
     ],
@@ -82,7 +82,7 @@
             "display": "6.4-инчов Super AMOLED капацитивен мултитъч екран с резолюция 1560 x 720 пиксела",
             "battery": "3000 mAh",
             "price": "1700",
-            "id": "1",
+            "id": "21",
             "image": "https://www.vario.bg/images/product/30889/Huawei%20P30%20Pro%20Breathing%20Crystal%206901443292554.jpg"
         },
         {
@@ -91,7 +91,7 @@
             "display": "6-инчов Dynamic AMOLED капацитивен мултитъч екран с Corning Gorilla Glass и резолюция 2280 x 1080 пиксела",
             "battery": "3000 mAh",
             "price": "2000",
-            "id": "2",
+            "id": "22",
             "image": "https://www.vario.bg/images/product/30889/Huawei%20P30%20Pro%20Breathing%20Crystal%206901443292554.jpg"
         },
         {
@@ -100,7 +100,7 @@
             "display": "5.5-инчов IPS LCD капацитивен мултитъч екран с олеофобско покритие и резолюция 1334 x 750 пиксела",
             "battery": "3500 mAh",
             "price": "800",
-            "id": "3",
+            "id": "23",
             "image": "https://specs-tech.com/wp-content/uploads/2019/09/Huawei-nova-5T-600x600.jpg"
         },
         {
@@ -109,7 +109,7 @@
             "display": "6.1-инчов IPS LCD капацитивен мултитъч екран с олеофобско покритие и резолюция 1334 x 750 пиксела",
             "battery": "4000 mAh",
             "price": "700",
-            "id": "4",
+            "id": "24",
             "image": "https://www.telenor.bg/sites/default/files/styles/device-full/public/crystal-web-combo.png?itok=cmaGNubg"
         }
     ]

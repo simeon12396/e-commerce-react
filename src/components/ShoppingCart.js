@@ -12,8 +12,17 @@ const ShoppingCart = () => {
     
     const totalPrice = shoppingCartValue.reduce((acc, curr) => acc + parseInt(curr.price), 0);
 
+    const handleRemoveProduct = (id) => {
+        shoppingCartValue.forEach(product => {
+            if(product.id === id) {
+                const filteredItems = shoppingCartValue.filter(item => item.id !== id)
+                setShoppingCatValue(filteredItems)
+            };
+        })
+    };
+
     return(
-        <div className="container">
+        <div className="container shopping-cart">
             <div className="row hor-line justify-content-around">
                 <span className="col-2">Продукт</span>
                 <span className="col-2">Модел</span>
@@ -34,7 +43,7 @@ const ShoppingCart = () => {
                                 <span className="col-2">1</span>
                                 <span className="col-2">{product.price}</span>
                                 <span className="col-2">
-                                    <FontAwesomeIcon icon={faTrashAlt} className="product__remove"/>
+                                    <FontAwesomeIcon icon={faTrashAlt} className="product__remove" onClick={() => handleRemoveProduct(product.id)}/>
                                 </span>
                             </div>
                         )

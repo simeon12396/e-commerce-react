@@ -49,7 +49,7 @@
             "ram": "8GB DDR3",
             "ssd": "128GB SSD",
             "price": "2500",
-            "id": "1",
+            "id": "5",
             "image": "https://richmedia.channeladvisor.com/ImageDelivery/imageService?profileId=12026540&id=1414276&recipeId=728"
         },
         {
@@ -59,7 +59,7 @@
             "ram": "16GB DDR4",
             "ssd": "1TB SSD NVMe",
             "price": "6299",
-            "id": "2",
+            "id": "6",
             "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp13touch-space-select-201807?wid=892&hei=820&&qlt=80&.v=1529520060550"
         },
         {
@@ -69,7 +69,7 @@
             "ram": "16GB DDR4",
             "ssd": "512GB SSD NVMe",
             "price": "5389",
-            "id": "3",
+            "id": "7",
             "image": "https://images.yaoota.com/UYQ_Loz0eAUyGfSjLugWyYXqFl0=/trim/yaootaweb-production-sa/media/crawledproductimages/b30691f2398830cca2a0bdc33c9ff8cee734d589.jpg"
         },
         {
@@ -79,7 +79,7 @@
             "ram": "8GB DDR3",
             "ssd": "512GB SSD NVMe",
             "price": "3789",
-            "id": "4",
+            "id": "8",
             "image": "https://www.igrossisti.eu/wp-content/uploads/2019/09/macbook-air-13-ricondizionato-b.jpg"
         }
     ],
@@ -91,7 +91,7 @@
             "ram": "16GB DDR4",
             "ssd": "1TB SSD NVMe",
             "price": "5699",
-            "id": "1",
+            "id": "9",
             "image": "https://laptop.bg/system/images/227523/normal/ZenBook_Pro_Duo_UX581.png"
         },
         {
@@ -101,7 +101,7 @@
             "ram": "от 8GB до 32GB DDR4",
             "ssd": "1TB SSD NVMe",
             "price": "2599",
-            "id": "2",
+            "id": "10",
             "image": "https://images-na.ssl-images-amazon.com/images/I/81NLJlCq%2BaL._AC_SX466_.jpg"
         },
         {
@@ -111,7 +111,7 @@
             "ram": "8GB DDR4",
             "ssd": "500GB SSD NVMe",
             "price": "1509",
-            "id": "3",
+            "id": "11",
             "image": "https://www.notebookcheck.net/uploads/tx_nbc2/ASUSZenBook14UM431DA__3_.JPG"
         },
         {
@@ -121,7 +121,7 @@
             "ram": "8GB LPDDR3",
             "ssd": "от 256GB до 2TB SSD NVMe",
             "price": "1649",
-            "id": "4",
+            "id": "12",
             "image": "https://images-na.ssl-images-amazon.com/images/I/81A9ZobNH%2BL._AC_SL1500_.jpg"
         }
     ]

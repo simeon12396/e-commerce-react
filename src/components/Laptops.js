@@ -18,16 +18,25 @@ const Laptops = () => {
     
     let [shoppingCartValue, setShoppingCartValue] = useContext(ShoppingCartContext);
     
-    const handleChangeValue = (image, model, price, quantity) => {
+    const handleChangeValue = (id, image, model, price, quantity) => {
         const actualProduct = {
+            id,
             image,
             model,
             price,
             quantity
         };
 
-        setShoppingCartValue([...shoppingCartValue, actualProduct]);
-    }
+        if(shoppingCartValue.length === 0) {
+            setShoppingCartValue([...shoppingCartValue, actualProduct]);
+        } else {
+            if(shoppingCartValue.find(product => product.id === id)) {
+                increaseQuantity(id);
+            } else {
+                setShoppingCartValue([...shoppingCartValue, actualProduct]);
+            }
+        }
+    };
 
     return(
         <div className="row justify-content-between">
@@ -53,7 +62,7 @@ const Laptops = () => {
 
                                 <Button variant="primary" className="mb-2">View</Button>
 
-                                <Button variant="success" className="mb-2" onClick={ () => handleChangeValue(post.image, post.model, post.price, 1)}>
+                                <Button variant="success" className="mb-2" onClick={ () => handleChangeValue(post.id, post.image, post.model, post.price, 1)}>
                                     <FontAwesomeIcon icon={ faCartPlus }/>
                                 </Button>
                             </Card>
@@ -84,7 +93,7 @@ const Laptops = () => {
 
                                 <Button variant="primary" className="mb-2">View</Button>
 
-                                <Button variant="success" className="mb-2" onClick={ () => handleChangeValue(post.image, post.model, post.price, 1)}>
+                                <Button variant="success" className="mb-2" onClick={ () => handleChangeValue(post.id, post.image, post.model, post.price, 1)}>
                                     <FontAwesomeIcon icon={ faCartPlus }/>
                                 </Button>
                             </Card>
@@ -115,7 +124,7 @@ const Laptops = () => {
 
                                 <Button variant="primary" className="mb-2">View</Button>
 
-                                <Button variant="success" className="mb-2" onClick={ () => handleChangeValue(post.image, post.model, post.price, 1)}>
+                                <Button variant="success" className="mb-2" onClick={ () => handleChangeValue(post.id, post.image, post.model, post.price, 1)}>
                                     <FontAwesomeIcon icon={ faCartPlus }/>
                                 </Button>
                             </Card>

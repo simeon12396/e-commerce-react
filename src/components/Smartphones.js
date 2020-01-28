@@ -18,8 +18,9 @@ const Smartphones = () => {
 
     let [shoppingCartValue, setShoppingCartValue] = useContext(ShoppingCartContext);
 
-    const handleChangeValue = (image, model, price, quantity) => {
+    const handleChangeValue = (id, image, model, price, quantity) => {
         const actualProduct = {
+            id,
             image,
             model,
             price,
@@ -51,7 +52,7 @@ const Smartphones = () => {
 
                                 <Button variant="primary" className="mb-2">View</Button>
                                 
-                                <Button variant="success" className="mb-2" onClick={() => handleChangeValue(post.image, post.model, post.price, 1)}>
+                                <Button variant="success" className="mb-2" onClick={() => handleChangeValue(post.id, post.image, post.model, post.price, 1)}>
                                     <FontAwesomeIcon icon={ faCartPlus }/>
                                 </Button>
                             </Card>
@@ -80,7 +81,7 @@ const Smartphones = () => {
                                 </Card.Body>
 
                                 <Button variant="primary" className="mb-2">View</Button>
-                                <Button variant="success" className="mb-2" onClick={() => handleChangeValue(post.image, post.model, post.price, 1)}>
+                                <Button variant="success" className="mb-2" onClick={() => handleChangeValue(post.id, post.image, post.model, post.price, 1)}>
                                     <FontAwesomeIcon icon={ faCartPlus }/>
                                 </Button>
                             </Card>
@@ -109,7 +110,7 @@ const Smartphones = () => {
                                 </Card.Body>
 
                                 <Button variant="primary" className="mb-2">View</Button>
-                                <Button variant="success" className="mb-2" onClick={() => handleChangeValue(post.image, post.model, post.price, 1)}>
+                                <Button variant="success" className="mb-2" onClick={() => handleChangeValue(post.id, post.image, post.model, post.price, 1)}>
                                     <FontAwesomeIcon icon={ faCartPlus }/>
                                 </Button>
                             </Card>

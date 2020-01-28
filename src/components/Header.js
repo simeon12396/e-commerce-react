@@ -21,7 +21,7 @@ const Header = () => {
 
             <Link to="/smartphones" className="header-hyperlink">Смартфони</Link>
 
-            <Link to="/shopping-cart" className="header-hyperlink header-hyperlink--cart">
+            <Link to="/shopping-cart" className="header-hyperlink header-hyperlink__cart">
                 <FontAwesomeIcon icon={ faShoppingCart }/>
 
                 <Badge variant="light">{shoppingCartValue.length}</Badge>
