@@ -30,12 +30,14 @@ const Laptops = () => {
         if(shoppingCartValue.length === 0) {
             setShoppingCartValue([...shoppingCartValue, actualProduct]);
         } else {
-            if(shoppingCartValue.find(product => product.id === id)) {
-                increaseQuantity(id);
+            const itContainsProduct = shoppingCartValue.find(product => product.id === id);
+
+            if(itContainsProduct) {
+                itContainsProduct.quantity++;
             } else {
                 setShoppingCartValue([...shoppingCartValue, actualProduct]);
-            }
-        }
+            };
+        };
     };
 
     return(
