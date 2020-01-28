@@ -24,22 +24,10 @@ const Laptops = () => {
             model,
             price,
             quantity
-        }
+        };
 
-        if(shoppingCartValue.length === 0) {
-            setShoppingCartValue([...shoppingCartValue, actualProduct])
-        } else {
-            shoppingCartValue.forEach(product => {
-                if(product.model === model) {
-                    console.log(shoppingCartValue)
-                   console.log('work')
-                } else {
-                    console.log(shoppingCartValue)
-                    setShoppingCartValue([...shoppingCartValue, actualProduct]);
-                }
-            })
-        }
-    };
+        setShoppingCartValue([...shoppingCartValue, actualProduct]);
+    }
 
     return(
         <div className="row justify-content-between">
@@ -60,7 +48,7 @@ const Laptops = () => {
                                         <li>{post.ssd}</li>
                                     </UnorderedList>
 
-                                    <p>Price: <span>{post.price}</span></p>
+                                    <p>Цена: <span>{post.price}</span> лв</p>
                                 </Card.Body>
 
                                 <Button variant="primary" className="mb-2">View</Button>
@@ -96,7 +84,7 @@ const Laptops = () => {
 
                                 <Button variant="primary" className="mb-2">View</Button>
 
-                                <Button variant="success" className="mb-2" onClick={ () => handleChangeValue()}>
+                                <Button variant="success" className="mb-2" onClick={ () => handleChangeValue(post.image, post.model, post.price, 1)}>
                                     <FontAwesomeIcon icon={ faCartPlus }/>
                                 </Button>
                             </Card>
@@ -127,7 +115,7 @@ const Laptops = () => {
 
                                 <Button variant="primary" className="mb-2">View</Button>
 
-                                <Button variant="success" className="mb-2" onClick={ () => handleChangeValue()}>
+                                <Button variant="success" className="mb-2" onClick={ () => handleChangeValue(post.image, post.model, post.price, 1)}>
                                     <FontAwesomeIcon icon={ faCartPlus }/>
                                 </Button>
                             </Card>

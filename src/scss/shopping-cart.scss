@@ -1,6 +1,28 @@
 .hor-line {
     border-top: 1.5px solid silver;
     border-bottom: 1.5px solid silver;
-    margin: 10px 0;
+    margin: 10px auto !important;
     padding: 5px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.products {
+    width: 100%;
+    text-align: center;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+
+    &__remove {
+        color: red;
+        font-size: 1.2rem;
+    }
+}
+
+.total-price {
+    text-align: right;
+    font-weight: 700;
 }

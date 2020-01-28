@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button';
@@ -11,8 +11,22 @@ import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import { UnorderedList } from '../styled-components/UnorderedList';
 import { Heading6 } from '../styled-components/Heading6';
 
+import { ShoppingCartContext } from '../contexts/ShoppingCartContext';
+
 const Smartphones = () => {
     const  { APPLE, SAMSUNG, HUAWEI } = SmartphonePosts;
+
+    let [shoppingCartValue, setShoppingCartValue] = useContext(ShoppingCartContext);
+
+    const handleChangeValue = (image, model, price, quantity) => {
+        const actualProduct = {
+            image,
+            model,
+            price,
+            quantity
+        }
+        setShoppingCartValue([...shoppingCartValue, actualProduct]);
+    }
     
     return(
         <div className="row justify-content-between">
@@ -37,7 +51,7 @@ const Smartphones = () => {
 
                                 <Button variant="primary" className="mb-2">View</Button>
                                 
-                                <Button variant="success" className="mb-2">
+                                <Button variant="success" className="mb-2" onClick={() => handleChangeValue(post.image, post.model, post.price, 1)}>
                                     <FontAwesomeIcon icon={ faCartPlus }/>
                                 </Button>
                             </Card>
@@ -66,7 +80,7 @@ const Smartphones = () => {
                                 </Card.Body>
 
                                 <Button variant="primary" className="mb-2">View</Button>
-                                <Button variant="success" className="mb-2">
+                                <Button variant="success" className="mb-2" onClick={() => handleChangeValue(post.image, post.model, post.price, 1)}>
                                     <FontAwesomeIcon icon={ faCartPlus }/>
                                 </Button>
                             </Card>
@@ -95,7 +109,9 @@ const Smartphones = () => {
                                 </Card.Body>
 
                                 <Button variant="primary" className="mb-2">View</Button>
-                                <Button variant="success" className="mb-2">Add to cart</Button>
+                                <Button variant="success" className="mb-2" onClick={() => handleChangeValue(post.image, post.model, post.price, 1)}>
+                                    <FontAwesomeIcon icon={ faCartPlus }/>
+                                </Button>
                             </Card>
                         )
                     })

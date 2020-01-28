@@ -17,9 +17,9 @@ const Header = () => {
 
     return (
         <div className="header row justify-content-center">
-            <Link to="/laptops" className="header-hyperlink">Laptops</Link>
+            <Link to="/laptops" className="header-hyperlink">Лаптопи</Link>
 
-            <Link to="/smartphones" className="header-hyperlink">Smartphones</Link>
+            <Link to="/smartphones" className="header-hyperlink">Смартфони</Link>
 
             <Link to="/shopping-cart" className="header-hyperlink header-hyperlink--cart">
                 <FontAwesomeIcon icon={ faShoppingCart }/>

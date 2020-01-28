@@ -6,7 +6,7 @@
             "videoCard": "NVIDIA Quadro T2000",
             "ram": "32GB DDR4",
             "ssd": "от 512GB SSD до 3TB (SSD NVMe и HDD)",
-            "price": "2900лв",
+            "price": "2900",
             "id": "1",
             "image": "https://www.extremetech.com/wp-content/uploads/2019/10/Dell-5540-640x353.jpg"
         },
@@ -16,7 +16,7 @@
             "videoCard": "Intel UHD Graphics",
             "ram": "16GB LPDDR3",
             "ssd": "от 1TB до 2TB SSD NVMe",
-            "price": "4359лв",
+            "price": "4359",
             "id": "2",
             "image": "https://icdn2.digitaltrends.com/image/digitaltrends/dell-xps-13-9380-ry-review-1.jpg"
         },
@@ -26,7 +26,7 @@
             "videoCard": "NVIDIA GeForce GTX 1660 Ti",
             "ram": "16GB LPDDR3",
             "ssd": "от 1256GB (SSD NVMe и HDD) до 3TB (SSD NVMe и HDD)",
-            "price": "3359лв",
+            "price": "3359",
             "id": "3",
             "image": "https://laptop.bg/system/images/231696/original/G3_3590.jpg"
         },
@@ -36,7 +36,7 @@
             "videoCard": "NVIDIA GeForce GTX 1660 Ti",
             "ram": "32GB LPDDR3",
             "ssd": "от 1256GB (SSD NVMe и HDD) до 3TB (SSD NVMe и HDD)",
-            "price": "2359лв",
+            "price": "2359",
             "id": "4",
             "image": "https://laptop.bg/system/images/224864/normal/Latitude_5400.png"
         }
@@ -48,7 +48,7 @@
             "videoCard": "NVIDIA GeForce GTX 1660 Ti",
             "ram": "8GB DDR3",
             "ssd": "128GB SSD",
-            "price": "2500лв",
+            "price": "2500",
             "id": "1",
             "image": "https://richmedia.channeladvisor.com/ImageDelivery/imageService?profileId=12026540&id=1414276&recipeId=728"
         },
@@ -58,7 +58,7 @@
             "videoCard": "AMD Radeon Pro 5500M",
             "ram": "16GB DDR4",
             "ssd": "1TB SSD NVMe",
-            "price": "6299лв",
+            "price": "6299",
             "id": "2",
             "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp13touch-space-select-201807?wid=892&hei=820&&qlt=80&.v=1529520060550"
         },
@@ -68,7 +68,7 @@
             "videoCard": "AMD Radeon Pro 5300M",
             "ram": "16GB DDR4",
             "ssd": "512GB SSD NVMe",
-            "price": "5389лв",
+            "price": "5389",
             "id": "3",
             "image": "https://images.yaoota.com/UYQ_Loz0eAUyGfSjLugWyYXqFl0=/trim/yaootaweb-production-sa/media/crawledproductimages/b30691f2398830cca2a0bdc33c9ff8cee734d589.jpg"
         },
@@ -78,7 +78,7 @@
             "videoCard": "Intel UHD Graphics 617",
             "ram": "8GB DDR3",
             "ssd": "512GB SSD NVMe",
-            "price": "3789лв",
+            "price": "3789",
             "id": "4",
             "image": "https://www.igrossisti.eu/wp-content/uploads/2019/09/macbook-air-13-ricondizionato-b.jpg"
         }
@@ -90,7 +90,7 @@
             "videoCard": "NVIDIA GeForce RTX 2060",
             "ram": "16GB DDR4",
             "ssd": "1TB SSD NVMe",
-            "price": "5699лв",
+            "price": "5699",
             "id": "1",
             "image": "https://laptop.bg/system/images/227523/normal/ZenBook_Pro_Duo_UX581.png"
         },
@@ -100,7 +100,7 @@
             "videoCard": "NVIDIA GeForce GTX 1660 Ti",
             "ram": "от 8GB до 32GB DDR4",
             "ssd": "1TB SSD NVMe",
-            "price": "2599лв",
+            "price": "2599",
             "id": "2",
             "image": "https://images-na.ssl-images-amazon.com/images/I/81NLJlCq%2BaL._AC_SX466_.jpg"
         },
@@ -110,7 +110,7 @@
             "videoCard": "AMD Radeon Vega 8",
             "ram": "8GB DDR4",
             "ssd": "500GB SSD NVMe",
-            "price": "1509лв",
+            "price": "1509",
             "id": "3",
             "image": "https://www.notebookcheck.net/uploads/tx_nbc2/ASUSZenBook14UM431DA__3_.JPG"
         },
@@ -120,7 +120,7 @@
             "videoCard": "Intel UHD Graphics 620",
             "ram": "8GB LPDDR3",
             "ssd": "от 256GB до 2TB SSD NVMe",
-            "price": "1649лв",
+            "price": "1649",
             "id": "4",
             "image": "https://images-na.ssl-images-amazon.com/images/I/81A9ZobNH%2BL._AC_SL1500_.jpg"
         }
