@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 
 import '../scss/shopping-cart.scss';
 
@@ -10,19 +10,29 @@ import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import NumericInput from 'react-numeric-input';
 
 const ShoppingCart = () => {
-    const [shoppingCartValue, setShoppingCatValue] = useContext(ShoppingCartContext);
+    const [shoppingCartValue, setShoppingCartValue] = useContext(ShoppingCartContext);
     
-    const totalPrice = shoppingCartValue.reduce((acc, curr) => acc + parseInt(curr.price) * parseInt(curr.quantity), 0);
+    const [totalPrice, setTotalPrice] = useState('');
+
+    useEffect(() => {
+        setTotalPrice(shoppingCartValue.reduce((acc, curr) => acc + parseInt(curr.price) * parseInt(curr.quantity), 0));
+    }, [totalPrice]);
 
     const handleRemoveProduct = (id) => {
         shoppingCartValue.forEach(product => {
             if(product.id === id && product.quantity === 1) {
-                const filteredItems = shoppingCartValue.filter(item => item.id !== id)
-                setShoppingCatValue(filteredItems)
+                const filteredItems = shoppingCartValue.filter(item => item.id !== id);
+                setShoppingCartValue(filteredItems);
+                setTotalPrice(shoppingCartValue.reduce((acc, curr) => acc + parseInt(curr.price) * 0, 0));
             } else if (product.id === id && product.quantity > 1 ) {
                 product.quantity--;
-            };
+                setTotalPrice(shoppingCartValue.reduce((acc, curr) => acc + parseInt(curr.price) * parseInt(curr.quantity), 0));
+            } 
         });
+    };
+
+    const handleChangeQuantity = (quantity) => {
+        console.log(quantity)
     };
 
     return(
@@ -45,7 +55,7 @@ const ShoppingCart = () => {
                                 <span className="col-2">{product.model}</span>
                                 <span className="col-2">{product.price}</span>
                                 <span className="col-2">
-                                    <NumericInput min={1} max={100} value={product.quantity}/>
+                                    <NumericInput min={1} max={100} value={product.quantity} onClick={(e) => handleChangeQuantity(e)}/>
                                 </span>
                                 <span className="col-2">{product.price}</span>
                                 <span className="col-2">
