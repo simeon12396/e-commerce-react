@@ -1,4 +1,4 @@
-import React, { useContext} from 'react';
+import React, { useState, useContext} from 'react';
 
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button';
@@ -17,7 +17,7 @@ const Laptops = () => {
     const  { DELL, APPLE, ASUS } = LaptopPosts;
     
     let [shoppingCartValue, setShoppingCartValue] = useContext(ShoppingCartContext);
-    
+
     const handleChangeValue = (id, image, model, price, quantity) => {
         const actualProduct = {
             id,
@@ -90,7 +90,7 @@ const Laptops = () => {
                                         <li>{post.ssd}</li>
                                     </UnorderedList>
 
-                                    <p>Price: <span>{post.price}</span></p>
+                                    <p>Цена: <span>{post.price}</span> лв</p>
                                 </Card.Body>
 
                                 <Button variant="primary" className="mb-2">View</Button>
@@ -121,7 +121,7 @@ const Laptops = () => {
                                         <li>{post.ssd}</li>
                                     </UnorderedList>
 
-                                    <p>Price: <span>{post.price}</span></p>
+                                    <p>Цена: <span>{post.price}</span> лв</p>
                                 </Card.Body>
 
                                 <Button variant="primary" className="mb-2">View</Button>

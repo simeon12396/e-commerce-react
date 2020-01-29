@@ -25,8 +25,19 @@ const Smartphones = () => {
             model,
             price,
             quantity
-        }
-        setShoppingCartValue([...shoppingCartValue, actualProduct]);
+        };
+
+        if(shoppingCartValue.length === 0) {
+            setShoppingCartValue([...shoppingCartValue, actualProduct]);
+        } else {
+            const itContainsProduct = shoppingCartValue.find(product => product.id === id);
+
+            if(itContainsProduct) {
+                itContainsProduct.quantity++;
+            } else {
+                setShoppingCartValue([...shoppingCartValue, actualProduct]);
+            };
+        };
     }
     
     return(
@@ -47,7 +58,7 @@ const Smartphones = () => {
                                         <li>{post.battery}</li>
                                     </UnorderedList>
 
-                                    <p>Price: <span>{post.price}</span></p>
+                                    <p>Цена: <span>{post.price}</span> лв</p>
                                 </Card.Body>
 
                                 <Button variant="primary" className="mb-2">View</Button>
@@ -77,10 +88,11 @@ const Smartphones = () => {
                                         <li>{post.battery}</li>
                                     </UnorderedList>
 
-                                    <p>Price: <span>{post.price}</span></p>
+                                    <p>Цена: <span>{post.price}</span> лв</p>
                                 </Card.Body>
 
                                 <Button variant="primary" className="mb-2">View</Button>
+                                
                                 <Button variant="success" className="mb-2" onClick={() => handleChangeValue(post.id, post.image, post.model, post.price, 1)}>
                                     <FontAwesomeIcon icon={ faCartPlus }/>
                                 </Button>
@@ -106,7 +118,7 @@ const Smartphones = () => {
                                         <li>{post.battery}</li>
                                     </UnorderedList>
 
-                                    <p>Price: <span>{post.price}</span></p>
+                                    <p>Цена: <span>{post.price}</span> лв</p>
                                 </Card.Body>
 
                                 <Button variant="primary" className="mb-2">View</Button>

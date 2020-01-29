@@ -5,9 +5,7 @@ import '../scss/shopping-cart.scss';
 import { ShoppingCartContext } from '../contexts/ShoppingCartContext';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
-
-import NumericInput from 'react-numeric-input';
+import { faTrashAlt, faPlusCircle, faMinusCircle } from '@fortawesome/free-solid-svg-icons';
 
 const ShoppingCart = () => {
     const [shoppingCartValue, setShoppingCartValue] = useContext(ShoppingCartContext);
@@ -31,8 +29,22 @@ const ShoppingCart = () => {
         });
     };
 
-    const handleChangeQuantity = (quantity) => {
-        console.log(quantity)
+    const handleIncrementQuantity = (id) => {
+        shoppingCartValue.forEach(product => {
+            if(product.id === id) {
+                product.quantity++;
+                setTotalPrice(shoppingCartValue.reduce((acc, curr) => acc + parseInt(curr.price) * parseInt(curr.quantity), 0));
+            }
+        })
+    };
+
+    const handleDecrementQuantity = (id) => {
+        shoppingCartValue.forEach(product => {
+            if(product.id === id && product.quantity > 1) {
+                product.quantity--;
+                setTotalPrice(shoppingCartValue.reduce((acc, curr) => acc + parseInt(curr.price) * parseInt(curr.quantity), 0));
+            }
+        })
     };
 
     return(
@@ -42,7 +54,6 @@ const ShoppingCart = () => {
                 <span className="col-2">Модел</span>
                 <span className="col-2">Цена</span>
                 <span className="col-2">Количество</span>
-                <span className="col-2">Междинна сума</span>
                 <span className="col-2">Премахни</span>
             </div>
 
@@ -54,10 +65,13 @@ const ShoppingCart = () => {
                                 <img src={product.image} className="col-2" />
                                 <span className="col-2">{product.model}</span>
                                 <span className="col-2">{product.price}</span>
-                                <span className="col-2">
-                                    <NumericInput min={1} max={100} value={product.quantity} onClick={(e) => handleChangeQuantity(e)}/>
-                                </span>
-                                <span className="col-2">{product.price}</span>
+                                <div className="col-2 flex-container">
+                                    <FontAwesomeIcon icon={faMinusCircle} className="product__decrement" onClick={() => handleDecrementQuantity(product.id)}/>
+
+                                    <span>{product.quantity}</span>
+
+                                    <FontAwesomeIcon icon={faPlusCircle} className="product__increment" onClick={() => handleIncrementQuantity(product.id)}/>
+                                </div>
                                 <span className="col-2">
                                     <FontAwesomeIcon icon={faTrashAlt} className="product__remove" onClick={() => handleRemoveProduct(product.id)}/>
                                 </span>
