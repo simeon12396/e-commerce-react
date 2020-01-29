@@ -1,5 +1,7 @@
 import React, {useState, useEffect, useContext} from 'react';
 
+import { Link } from 'react-router-dom';
+
 import '../scss/shopping-cart.scss';
 
 import { ShoppingCartContext } from '../contexts/ShoppingCartContext';
@@ -62,9 +64,14 @@ const ShoppingCart = () => {
                     shoppingCartValue.map((product, index) => {
                         return(
                             <div key={index} className="row justify-content-around mb-4 product">
-                                <img src={product.image} className="col-2" />
+                                <Link to={`/product/${product.id}`} className="col-2">
+                                    <img src={product.image} className="product__img"/>
+                                </Link>
+
                                 <span className="col-2">{product.model}</span>
+
                                 <span className="col-2">{product.price}</span>
+
                                 <div className="col-2 flex-container">
                                     <FontAwesomeIcon icon={faMinusCircle} className="product__decrement" onClick={() => handleDecrementQuantity(product.id)}/>
 
@@ -72,6 +79,7 @@ const ShoppingCart = () => {
 
                                     <FontAwesomeIcon icon={faPlusCircle} className="product__increment" onClick={() => handleIncrementQuantity(product.id)}/>
                                 </div>
+
                                 <span className="col-2">
                                     <FontAwesomeIcon icon={faTrashAlt} className="product__remove" onClick={() => handleRemoveProduct(product.id)}/>
                                 </span>

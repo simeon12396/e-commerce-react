@@ -16,8 +16,8 @@ const Header = () => {
     const [shoppingCartValue, setShoppingCartValue] = useContext(ShoppingCartContext);
 
     return (
-        <div className="header row justify-content-center">
-            <Link to="/laptops" className="header-hyperlink">Лаптопи</Link>
+        <div className="header row">
+            <Link to="/laptops" className="header-hyperlink" >Лаптопи</Link>
 
             <Link to="/smartphones" className="header-hyperlink">Смартфони</Link>
 

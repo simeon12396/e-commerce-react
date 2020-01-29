@@ -1,6 +1,7 @@
 .header {
     background: silver;
     padding: 8px 0;
+    justify-content: center;
 
     &-hyperlink {
         color: white;
@@ -18,5 +19,21 @@
             position: absolute;
             right: 50px;
         }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-hyperlink{
+            margin-bottom: 5px;
+            
+            &__cart {
+                position: static;
+            }
+        } 
     }
 }

@@ -1,4 +1,6 @@
-import React, { useState, useContext} from 'react';
+import React, { useContext} from 'react';
+
+import { Link } from 'react-router-dom';
 
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button';
@@ -12,11 +14,13 @@ import { UnorderedList } from '../styled-components/UnorderedList';
 import { Heading6 } from '../styled-components/Heading6';
 
 import { ShoppingCartContext } from '../contexts/ShoppingCartContext';
+import { ProductContext } from '../contexts/ProductContext';
 
 const Laptops = () => {
     const  { DELL, APPLE, ASUS } = LaptopPosts;
     
     let [shoppingCartValue, setShoppingCartValue] = useContext(ShoppingCartContext);
+    let [product, setProduct] = useContext(ProductContext);
 
     const handleChangeValue = (id, image, model, price, quantity) => {
         const actualProduct = {
@@ -39,15 +43,17 @@ const Laptops = () => {
             };
         };
     };
-
+    
     return(
         <div className="row justify-content-between">
-            <div className="row col-4 justify-content-around">
+            <div className="row col-md-6 col-xl-4 justify-content-around">
                 {
                     DELL.map((post, index) => {
                         return (
-                            <Card className="col-6  mt-3 mb-3" key={index}>
-                                <Card.Img variant="top" src={post.image} />
+                            <Card className="col-xs-12 col-md-6  mt-3 mb-3" key={index}>
+                                <Link to={`/product/${post.id}`} onClick={() => setProduct(post)} className="card__hyperlink--img">
+                                    <Card.Img variant="top" src={post.image} />
+                                </Link>
 
                                 <Card.Body>
                                     <Heading6>{post.model}</Heading6>
@@ -62,7 +68,9 @@ const Laptops = () => {
                                     <p>Цена: <span>{post.price}</span> лв</p>
                                 </Card.Body>
 
-                                <Button variant="primary" className="mb-2">View</Button>
+                                <Link to={`/product/${post.id}`} className="mb-2 card__hyperlink" onClick={() => setProduct(post)}>
+                                    View
+                                </Link>
 
                                 <Button variant="success" className="mb-2" onClick={ () => handleChangeValue(post.id, post.image, post.model, post.price, 1)}>
                                     <FontAwesomeIcon icon={ faCartPlus }/>
@@ -73,12 +81,14 @@ const Laptops = () => {
                 }
             </div>
 
-            <div className="row col-4 justify-content-around">
+            <div className="row col-md-6 col-xl-4 justify-content-around">
                 {
                     APPLE.map((post, index) => {
                         return (
-                            <Card className="col-6 mt-3 mb-3" key={index}>
-                                <Card.Img variant="top" src={post.image} />
+                            <Card className="col-xs-12 col-md-6 mt-3 mb-3" key={index}>
+                                <Link to={`/product/${post.id}`} onClick={() => setProduct(post)} className="card__hyperlink--img">
+                                    <Card.Img variant="top" src={post.image} />
+                                </Link>
 
                                 <Card.Body>
                                     <Heading6>{post.model}</Heading6>
@@ -93,7 +103,9 @@ const Laptops = () => {
                                     <p>Цена: <span>{post.price}</span> лв</p>
                                 </Card.Body>
 
-                                <Button variant="primary" className="mb-2">View</Button>
+                                <Link to={`/product/${post.id}`} className="mb-2 card__hyperlink" onClick={() => setProduct(post)}>
+                                    View
+                                </Link>
 
                                 <Button variant="success" className="mb-2" onClick={ () => handleChangeValue(post.id, post.image, post.model, post.price, 1)}>
                                     <FontAwesomeIcon icon={ faCartPlus }/>
@@ -104,12 +116,14 @@ const Laptops = () => {
                 }
             </div>
 
-            <div className="row col-4 justify-content-around">
+            <div className="row col-md-6 col-xl-4 justify-content-around">
                 {
                     ASUS.map((post, index) => {
                         return (
-                            <Card className="col-6 mt-3 mb-3" key={index}>
-                                <Card.Img variant="top" src={post.image} />
+                            <Card className="col-xs-12 col-md-6 mt-3 mb-3" key={index}>
+                                <Link to={`/product/${post.id}`} onClick={() => setProduct(post)} className="card__hyperlink--img">
+                                    <Card.Img variant="top" src={post.image} />
+                                </Link>
 
                                 <Card.Body>
                                     <Heading6>{post.model}</Heading6>
@@ -124,7 +138,9 @@ const Laptops = () => {
                                     <p>Цена: <span>{post.price}</span> лв</p>
                                 </Card.Body>
 
-                                <Button variant="primary" className="mb-2">View</Button>
+                                <Link to={`/product/${post.id}`} className="mb-2 card__hyperlink" onClick={() => setProduct(post)}>
+                                    View
+                                </Link>
 
                                 <Button variant="success" className="mb-2" onClick={ () => handleChangeValue(post.id, post.image, post.model, post.price, 1)}>
                                     <FontAwesomeIcon icon={ faCartPlus }/>
