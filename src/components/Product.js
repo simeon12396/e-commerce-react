@@ -130,7 +130,7 @@ const Product = (props) => {
                         <h1 className="product__heading">{product.model}</h1>
 
                         <div className="row align-items-center justify-content-center mt-5 product_img-wrapper">
-                            <img src={product.image} className="product__image col-6" />
+                            <img src={product.image} className="product__image product__image--laptops"/>
                         </div>
 
                         <div className="product__btn-wrapper mb-2 mt-5">

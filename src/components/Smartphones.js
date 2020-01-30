@@ -42,7 +42,7 @@ const Smartphones = () => {
                 setShoppingCartValue([...shoppingCartValue, actualProduct]);
             };
         };
-    }
+    };
     
     return(
         <div className="row justify-content-between">
