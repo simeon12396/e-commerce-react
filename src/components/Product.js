@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 
 import '../scss/product.scss';
 
@@ -14,7 +14,7 @@ import Button from 'react-bootstrap/Button';
 const Product = (props) => {
     let [product, setProduct] = useContext(ProductContext);
 
-    let [shoppingCartValue, setShoppingCartValue] = useContext(ShoppingCartContext);
+    const [shoppingCartValue, setShoppingCartValue] = useContext(ShoppingCartContext);
 
     const handleChangeValue = (id, image, model, price, quantity) => {
         const actualProduct = {

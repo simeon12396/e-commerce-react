@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import '../scss/shopping-cart.scss';
 
 import { ShoppingCartContext } from '../contexts/ShoppingCartContext';
+import { ProductContext } from '../contexts/ProductContext';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashAlt, faPlusCircle, faMinusCircle } from '@fortawesome/free-solid-svg-icons';
@@ -12,6 +13,8 @@ import { faTrashAlt, faPlusCircle, faMinusCircle } from '@fortawesome/free-solid
 const ShoppingCart = () => {
     const [shoppingCartValue, setShoppingCartValue] = useContext(ShoppingCartContext);
     
+    const [product, setProduct] = useContext(ProductContext);
+
     const [totalPrice, setTotalPrice] = useState('');
 
     useEffect(() => {
@@ -64,7 +67,7 @@ const ShoppingCart = () => {
                     shoppingCartValue.map((product, index) => {
                         return(
                             <div key={index} className="row justify-content-around mb-4 product">
-                                <Link to={`/product/${product.id}`} className="col-2">
+                                <Link to={`/product/${product.id}`} className="col-2" onClick={setProduct(product)}>
                                     <img src={product.image} className="product__img"/>
                                 </Link>
 
