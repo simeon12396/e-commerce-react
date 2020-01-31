@@ -67,7 +67,7 @@ const ShoppingCart = () => {
                     shoppingCartValue.map((product, index) => {
                         return(
                             <div key={index} className="row justify-content-around mb-4 product">
-                                <Link to={`/product/${product.id}`} className="col-2" onClick={setProduct(product)}>
+                                <Link to={`/product/${product.id}`} className="col-2" onClick={() => setProduct(product)}>
                                     <img src={product.image} className="product__img"/>
                                 </Link>
 
