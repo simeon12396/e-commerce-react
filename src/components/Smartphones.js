@@ -22,13 +22,16 @@ const Smartphones = () => {
     let [shoppingCartValue, setShoppingCartValue] = useContext(ShoppingCartContext);
     let [product, setProduct] = useContext(ProductContext);
 
-    const handleChangeValue = (id, image, model, price, quantity) => {
+    const handleChangeValue = (id, image, model, price, quantity, processor, display, battery) => {
         const actualProduct = {
             id,
             image,
             model,
             price,
-            quantity
+            quantity,
+            processor,
+            display,
+            battery
         };
 
         if(shoppingCartValue.length === 0) {
@@ -71,7 +74,7 @@ const Smartphones = () => {
                                     View
                                 </Link>
                                 
-                                <Button variant="success" className="mb-2" onClick={() => handleChangeValue(post.id, post.image, post.model, post.price, 1)}>
+                                <Button variant="success" className="mb-2" onClick={() => handleChangeValue(post.id, post.image, post.model, post.price, 1, post.processor, post.display, post.battery)}>
                                     <FontAwesomeIcon icon={ faCartPlus }/>
                                 </Button>
                             </Card>

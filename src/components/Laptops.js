@@ -16,19 +16,25 @@ import { Heading6 } from '../styled-components/Heading6';
 import { ShoppingCartContext } from '../contexts/ShoppingCartContext';
 import { ProductContext } from '../contexts/ProductContext';
 
+import Accordions from './Accordions';
+
 const Laptops = () => {
     const  { laptops } = LaptopPosts;
     
     let [shoppingCartValue, setShoppingCartValue] = useContext(ShoppingCartContext);
     let [product, setProduct] = useContext(ProductContext);
 
-    const handleChangeValue = (id, image, model, price, quantity) => {
+    const handleChangeValue = (id, image, model, price, quantity, processor, ram, videoCard, ssd) => {
         const actualProduct = {
             id,
             image,
             model,
             price,
-            quantity
+            quantity,
+            processor,
+            ram,
+            videoCard,
+            ssd
         };
 
         if(shoppingCartValue.length === 0) {
@@ -46,6 +52,8 @@ const Laptops = () => {
     
     return(
         <div className="row justify-content-between">
+            <Accordions />
+
             <div className="row col-12 justify-content-around">
                 {
                     laptops.map((post, index) => {
@@ -72,7 +80,7 @@ const Laptops = () => {
                                     View
                                 </Link>
 
-                                <Button variant="success" className="mb-2" onClick={ () => handleChangeValue(post.id, post.image, post.model, post.price, 1)}>
+                                <Button variant="success" className="mb-2" onClick={ () => handleChangeValue(post.id, post.image, post.model, post.price, 1, post.processor, post.ram, post.videoCard, post.ssd)}>
                                     <FontAwesomeIcon icon={ faCartPlus }/>
                                 </Button>
                             </Card>

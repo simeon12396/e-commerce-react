@@ -1,0 +1,30 @@
+.accordions {
+    width: 100%;
+
+    button {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        span {
+            margin: 0 auto;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__input {
+        margin-left: 20px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .card-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
