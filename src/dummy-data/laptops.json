@@ -1,5 +1,5 @@
 {
-    "DELL": [
+    "laptops": [
         {
             "model": "Precision 5540",
             "processor": "Intel Core i7-9850H",
@@ -39,9 +39,7 @@
             "price": "2359",
             "id": "4",
             "image": "https://laptop.bg/system/images/224864/normal/Latitude_5400.png"
-        }
-    ],
-    "APPLE": [
+        },
         {
             "model": "MacBook Air 13.3",
             "processor": "Intel Core i5-8210Y",
@@ -81,9 +79,7 @@
             "price": "3789",
             "id": "8",
             "image": "https://www.igrossisti.eu/wp-content/uploads/2019/09/macbook-air-13-ricondizionato-b.jpg"
-        }
-    ],
-    "ASUS": [
+        },
         {
             "model": "ZenBook Pro Duo UX581GV-H2002R",
             "processor": "Intel Core i7-9750H",

@@ -17,7 +17,7 @@ import { ShoppingCartContext } from '../contexts/ShoppingCartContext';
 import { ProductContext } from '../contexts/ProductContext';
 
 const Smartphones = () => {
-    const  { APPLE, SAMSUNG, HUAWEI } = SmartphonePosts;
+    const  { smartphones } = SmartphonePosts;
 
     let [shoppingCartValue, setShoppingCartValue] = useContext(ShoppingCartContext);
     let [product, setProduct] = useContext(ProductContext);
@@ -46,11 +46,11 @@ const Smartphones = () => {
     
     return(
         <div className="row justify-content-between">
-            <div className="row col-md-6 col-xl-4 justify-content-around">
+            <div className="row col-12 justify-content-around">
                 {
-                    APPLE.map((post, index) => {
+                    smartphones.map((post, index) => {
                         return (
-                            <Card className="col-xs-12 col-md-6 mt-3 mb-3" key={index}>
+                            <Card className="col-xs-12 col-md-6 col-lg-3 mt-3 mb-3" key={index}>
                                 <Link to={`/product/${post.id}`} onClick={() => setProduct(post)} className="card__hyperlink--img">
                                     <Card.Img variant="top" src={post.image} />
                                 </Link>
@@ -71,74 +71,6 @@ const Smartphones = () => {
                                     View
                                 </Link>
                                 
-                                <Button variant="success" className="mb-2" onClick={() => handleChangeValue(post.id, post.image, post.model, post.price, 1)}>
-                                    <FontAwesomeIcon icon={ faCartPlus }/>
-                                </Button>
-                            </Card>
-                        )
-                    })
-                }
-            </div>
-
-            <div className="row col-md-6 col-xl-4 justify-content-around">
-                {
-                    SAMSUNG.map((post, index) => {
-                        return (
-                            <Card className="col-xs-12 col-md-6  mt-3 mb-3" key={index}>
-                                <Link to={`/product/${post.id}`} onClick={() => setProduct(post)} className="card__hyperlink--img">
-                                    <Card.Img variant="top" src={post.image} />
-                                </Link>
-
-                                <Card.Body>
-                                    <Heading6>{post.model}</Heading6>
-
-                                    <UnorderedList>
-                                        <li>{post.processor}</li>
-                                        <li>{post.display}</li>
-                                        <li>{post.battery}</li>
-                                    </UnorderedList>
-
-                                    <p>Цена: <span>{post.price}</span> лв</p>
-                                </Card.Body>
-
-                                <Link to={`/product/${post.id}`} className="mb-2 card__hyperlink" onClick={() => setProduct(post)}>
-                                    View
-                                </Link>
-
-                                <Button variant="success" className="mb-2" onClick={() => handleChangeValue(post.id, post.image, post.model, post.price, 1)}>
-                                    <FontAwesomeIcon icon={ faCartPlus }/>
-                                </Button>
-                            </Card>
-                        )
-                    })
-                }
-            </div>
-
-            <div className="row col-md-6 col-xl-4 justify-content-around">
-                {
-                    HUAWEI.map((post, index) => {
-                        return (
-                            <Card className="col-xs-12 col-md-6  mt-3 mb-3" key={index}>
-                                <Link to={`/product/${post.id}`} onClick={() => setProduct(post)} className="card__hyperlink--img">
-                                    <Card.Img variant="top" src={post.image} />
-                                </Link>
-
-                                <Card.Body>
-                                    <Heading6>{post.model}</Heading6>
-
-                                    <UnorderedList>
-                                        <li>{post.processor}</li>
-                                        <li>{post.display}</li>
-                                        <li>{post.battery}</li>
-                                    </UnorderedList>
-
-                                    <p>Цена: <span>{post.price}</span> лв</p>
-                                </Card.Body>
-
-                                <Link to={`/product/${post.id}`} className="mb-2 card__hyperlink" onClick={() => setProduct(post)}>
-                                    View
-                                </Link>
-
                                 <Button variant="success" className="mb-2" onClick={() => handleChangeValue(post.id, post.image, post.model, post.price, 1)}>
                                     <FontAwesomeIcon icon={ faCartPlus }/>
                                 </Button>

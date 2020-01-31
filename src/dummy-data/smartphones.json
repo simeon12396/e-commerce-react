@@ -1,5 +1,5 @@
 {
-    "APPLE": [
+    "smartphones": [
         {
             "model": "8, свиц цвят",
             "processor": "Apple A11 Bionic (2-ядрен, Monsoon & 4-ядрен, Mistral)",
@@ -35,9 +35,7 @@
             "price": "2000",
             "id": "16",
             "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-black-select-2019?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1566956144418"
-        }
-    ],
-    "SAMSUNG": [
+        },
         {
             "model": "Galaxy A30s 64GB Dual SIM, Green",
             "processor": "Exynos 7904 (14 nm) (2x1.8 GHz Cortex-A73 & 6x1.6 GHz Cortex-A53)",
@@ -73,9 +71,7 @@
             "price": "2000",
             "id": "20",
             "image": "https://images.samsung.com/is/image/samsung/uk-galaxy-note10plus-sm-n975-sm-n975fzsdbtu-179669580?$PD_GALLERY_L_JPG$"
-        }
-    ],
-    "HUAWEI": [
+        },
         {
             "model": "P30 Pro 256GB, цвят Breathing Crystal",
             "processor": "HiSilicon Kirin 980 (7 nm) (2-ядрен, 2.60GHz, Cortex-A76 & 2-ядрен, 1.92GHz, Cortex-A76 & 4-ядрен, 1.80GHz, Cortex-A55)",
